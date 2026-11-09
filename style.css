@@ -1,0 +1,104 @@
+/* Ground Truths: simple stylesheet. This one file controls the look of all four pages. */
+
+/* Colors used (change them here to restyle the whole site):
+   dark green #2f5d3a | gold #d9a521 | page background #f4f7ef | text #222 */
+
+/* Keep the page light even if the device uses dark mode. */
+:root { color-scheme: light; }
+
+/* The whole page: font, text color, background. */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: #222;
+  background: #f4f7ef;
+}
+
+/* The top bar. */
+header { background: #2f5d3a; }
+
+/* The menu: links on the left, "Ground Truths" pushed to the right. */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+nav a:hover { background: #3f7a4d; }
+nav strong {
+  margin-left: auto;      /* pushes the name to the far right */
+  color: #f0c24b;
+  font-size: 1.2em;
+}
+
+/* Hide the plain lines (hr) because the colored bars replace them. */
+header hr, footer hr { display: none; }
+
+/* Main content: centered column. */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+/* Headings. */
+h1 { font-size: 2.2em; color: #2f5d3a; line-height: 1.2; }
+h2 { color: #2f5d3a; border-bottom: 2px solid #d9a521; padding-bottom: 4px; }
+h3 { color: #3f7a4d; }
+
+/* Space between sections. */
+section { margin-bottom: 30px; }
+
+/* The three topics on the Home page: a gold line on the left. */
+article {
+  border-left: 4px solid #d9a521;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+/* Images: never wider than the page, rounded corners. */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+/* Links. */
+a { color: #2f5d3a; }
+
+/* Tables. */
+table { border-collapse: collapse; width: 100%; background: #fff; }
+caption { font-weight: bold; text-align: left; padding-bottom: 6px; }
+th, td { border: 1px solid #c9d3c0; padding: 8px 10px; text-align: left; }
+th { background: #2f5d3a; color: #fff; }
+
+/* The goal statement. */
+blockquote {
+  margin: 0;
+  padding: 12px 20px;
+  background: #fbf1cf;
+  border-left: 4px solid #d9a521;
+  font-style: italic;
+}
+
+/* Bottom bar. */
+footer {
+  background: #2f5d3a;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+}
+footer p { margin: 4px 0; }
+footer a { color: #f0c24b; }
