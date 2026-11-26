@@ -16,8 +16,7 @@ body {
 }
 
 /* The top bar. */
-header { background: #2f5d3a; }
-
+header { background: #2f5d3a; position: sticky; top: 0; z-index: 10; }
 /* The menu: links on the left, "Ground Truths" pushed to the right. */
 nav {
   display: flex;
@@ -102,3 +101,23 @@ footer {
 }
 footer p { margin: 4px 0; }
 footer a { color: #f0c24b; }
+#indicator {
+  max-width: 940px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 32px 8px;
+  font-size: 0.9em;
+  color: #f0c24b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 600px) {
+  h1 { font-size: 1.7em; }
+  nav { padding: 8px 12px; }
+  nav a { padding: 8px 10px; }
+  nav strong { margin-left: 0; width: 100%; padding: 4px 10px 0; }
+  main { padding: 10px 14px 24px; }
+  th, td { padding: 6px; font-size: 0.95em; }
+  #indicator { padding: 0 22px 6px; }
+}
