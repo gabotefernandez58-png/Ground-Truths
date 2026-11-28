@@ -17,3 +17,12 @@ function updateIndicator() {
 
 window.addEventListener("scroll", updateIndicator);
 updateIndicator();
+var toggle = document.getElementById("menu-toggle");
+var menu = document.getElementById("menu");
+
+if (toggle && menu) {
+  toggle.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open);
+  });
+}
