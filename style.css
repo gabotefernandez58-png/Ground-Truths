@@ -12,7 +12,8 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.7;
   color: #222;
-  background: #f4f7ef;
+  background: linear-gradient(180deg, #dff1fb 0%, #f4f7ef 45%, #cfe5b4 100%);
+  background-attachment: fixed;
 }
 
 /* The top bar. */
